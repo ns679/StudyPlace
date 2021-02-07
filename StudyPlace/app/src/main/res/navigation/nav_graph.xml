@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.studyplace.MainFragment.FirstFragment"
+        android:label="何号館？"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment"
+            app:popUpTo="@id/FirstFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_FirstFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment"
+            app:popUpTo="@id/FirstFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_FirstFragment_to_forthFragment"
+            app:destination="@id/forthFragment"
+            app:popUpTo="@id/FirstFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.studyplace.MainFragment.SecondFragment"
+        android:label="何階？"
+        tools:layout="@layout/fragment_second">
+        <action
+            android:id="@+id/action_SecondFragment_to_fragment8_1"
+            app:destination="@id/fragment8_1"
+            app:popUpTo="@id/SecondFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_SecondFragment_to_fragment8_2"
+            app:destination="@id/fragment8_2"
+            app:popUpTo="@id/SecondFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_SecondFragment_to_fragment8_3"
+            app:destination="@id/fragment8_3"
+            app:popUpTo="@id/SecondFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_SecondFragment_to_fragment8_4"
+            app:destination="@id/fragment8_4"
+            app:popUpTo="@id/SecondFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.example.studyplace.MainFragment.ThirdFragment"
+        android:label="何階？" >
+        <action
+            android:id="@+id/action_thirdFragment_to_fragment23_1"
+            app:destination="@id/fragment23_1"
+            app:popUpTo="@id/thirdFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_thirdFragment_to_fragment23_2"
+            app:destination="@id/fragment23_2"
+            app:popUpTo="@id/thirdFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_thirdFragment_to_fragment23_3"
+            app:destination="@id/fragment23_3"
+            app:popUpTo="@id/thirdFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment8_1"
+        android:name="com.example.studyplace.SubFragment.Fragment8_1"
+        android:label="8号館1階" />
+    <fragment
+        android:id="@+id/fragment8_2"
+        android:name="com.example.studyplace.SubFragment.Fragment8_2"
+        android:label="8号館2階" />
+    <fragment
+        android:id="@+id/fragment8_3"
+        android:name="com.example.studyplace.SubFragment.Fragment8_3"
+        android:label="8号館3階" />
+    <fragment
+        android:id="@+id/fragment8_4"
+        android:name="com.example.studyplace.SubFragment.Fragment8_4"
+        android:label="8号館4階" />
+    <fragment
+        android:id="@+id/forthFragment"
+        android:name="com.example.studyplace.MainFragment.ForthFragment"
+        android:label="何階？" >
+        <action
+            android:id="@+id/action_forthFragment_to_fragment_other1"
+            app:destination="@id/fragment_other1"
+            app:popUpTo="@id/forthFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_forthFragment_to_fragment_21"
+            app:destination="@id/fragment_21"
+            app:popUpTo="@id/forthFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_forthFragment_to_fragment_other2"
+            app:destination="@id/fragment_other2"
+            app:popUpTo="@id/forthFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment23_1"
+        android:name="com.example.studyplace.SubFragment.Fragment23_1"
+        android:label="23号館1階" />
+    <fragment
+        android:id="@+id/fragment23_2"
+        android:name="com.example.studyplace.SubFragment.Fragment23_2"
+        android:label="23号館2階" />
+    <fragment
+        android:id="@+id/fragment23_3"
+        android:name="com.example.studyplace.SubFragment.Fragment23_3"
+        android:label="23号館3階" />
+    <fragment
+        android:id="@+id/fragment_other1"
+        android:name="com.example.studyplace.SubFragment.Fragment_other1"
+        android:label="パフォーミングスタジオ" />
+    <fragment
+        android:id="@+id/fragment_21"
+        android:name="com.example.studyplace.SubFragment.Fragment_21"
+        android:label="21号館1階" />
+    <fragment
+        android:id="@+id/fragment_other2"
+        android:name="com.example.studyplace.SubFragment.Fragment_other2"
+        android:label="コンビニ1階" />
+</navigation>
